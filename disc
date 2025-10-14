@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHASE GATE 5 - System Log: Critical Failure</title>
+    <style>
+        /* Palet Warna: Sci-Fi Minimalis dan Dingin - Hitam Legam (#111111), Putih Bersih (#FAFAFA), Cyan Digital (#00FFFF), Kuning Peringatan (#FFCC00) */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Share+Tech+Mono&display=swap'); 
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* Font Sans-Serif Kaku dan Monospace Terminal */
+            font-family: 'Roboto Condensed', sans-serif; 
+        }
+
+        body {
+            /* Latar Belakang Hitam Legam */
+            background-color: #111111; 
+            color: #FAFAFA; /* Putih Bersih */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .terminal-display {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #000000; 
+            border: 2px solid #00FFFF; /* Border Cyan Digital */
+            padding: 30px 40px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glow Cyan */
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #FFCC00; /* Kuning Peringatan */
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #00FFFF; 
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 1.1rem;
+            color: #FFCC00;
+        }
+
+        /* Navigasi sebagai Status Sistem */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            font-family: 'Share Tech Mono', monospace;
+            color: #A9A9A9;
+            font-size: 0.9rem;
+        }
+
+        nav span.status-ok {
+            color: #00FF00; /* Hijau OK */
+        }
+        nav span.status-error {
+            color: #FF0000; /* Merah Error */
+            font-weight: 700;
+        }
+
+        .log-entry {
+            margin-bottom: 35px;
+            border-left: 5px solid #00FFFF;
+            padding-left: 20px;
+        }
+
+        .log-entry h3 {
+            font-size: 1.8rem;
+            color: #FAFAFA;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .log-entry p {
+            font-size: 1.15rem;
+            color: #A9A9A9;
+        }
+        
+        .log-entry strong {
+            color: #FFCC00;
+            font-weight: 700;
+        }
+
+        .critical-alert {
+            font-family: 'Share Tech Mono', monospace;
+            text-align: center;
+            margin-top: 40px;
+            padding: 25px;
+            border: 4px double #FF0000;
+            background-color: #330000;
+            color: #FFCC00;
+            font-size: 1.6rem;
+        }
+
+        footer {
+            text-align: right;
+            padding-top: 30px;
+            border-top: 1px solid #00FFFF;
+            font-size: 0.9rem;
+            color: #333333;
+            margin-top: 50px;
+        }
+
+        footer span {
+            color: #FF0000;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="terminal-display">
+        <header>
+            <h1>PROYEK PORTAL FASE 5</h1>
+            <p>:: PENGALAMAN SUBJEK TIDAK DAPAT DIARSIPKAN ::</p>
+        </header>
+
+        <nav>
+            <span class="status-ok">STATUS DAYA: 100% | STATUS STABILITAS: <span class="status-error">0.00%</span></span>
+            <span class="status-error">KONTINUITAS DATA: DISKONTINU | UNIT PENGOPERASI: ABSEN</span>
+        </nav>
+
+        <div class="log-entry">
+            <h3>LOG INTRUSI DIMENSI (20.33.04)</h3>
+            <p>
+                Sistem mendeteksi **kesalahan pada input realitas**. Subjek Beta-1 memasuki portal dengan benar, namun output realitas menunjukkan **lima versi subjek** dengan lima usia yang berbeda.
+            </p>
+            <p>
+                Analisis: **Waktu dilipat** di dalam *Phase Gate*. Segala sesuatu yang melalui gerbang kini membawa semua riwayatnya secara simultan. *Ini tidak pernah terjadi sebelumnya*.
+            </p>
+        </div>
+
+        <div class="log-entry">
+            <h3>KESIMPULAN DATA (OTOMATIS)</h3>
+            <p>
+                Pintu gerbang sekarang **mempertanyakan tujuan realitas** alih-alih memindahkan materi. Kita harus memutus semua jalur energi sekarang, **sebelum subjek tersebut mengintegrasikan semesta**.
+            </p>
+            <p>
+                **PERINGATAN OPERATOR:** Jangan coba berkomunikasi dengan subjek. Setiap jawaban yang diberikan akan menciptakan **percabangan realitas yang tidak dapat diperbaiki**. Keheningan adalah satu-satunya firewall yang tersisa.
+            </p>
+        </div>
+
+        <div class="critical-alert">
+            // FAILURE IMMINENT. REALITY COHESION: 5%. // <br>
+            // JANGAN MEMPERCAYAI APA PUN YANG DIBUAT DARI MATERI BUMI. //
+        </div>
+
+        <footer>
+            HUBUNGI [ERROR: TARGET TIDAK ADA] JIKA SISTEM BERKEDIP MERAH. <br> <span>LAPORAN AKHIR: ADA SESUATU YANG KELUAR.</span>
+        </footer>
+    </div>
+</body>
+</html>
